@@ -13,6 +13,13 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        #states {
+            background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 10px #fffff inset;
+    padding: 10px;
+    width: 700px;
+}
     </style>
 </head>
 
@@ -22,8 +29,17 @@
 
             <h1 class="font-[600] text-3xl">Crop Yeild Production system</h1>
             <form class="flex flex-col" method="POST" , action="{{url_for('home')}}">
-                <label class="text-xl font-[500]  mt-10" for="">State</label>
-                <input class="border-1 rounded-2xl py-2 w-full" type="text" name="State" id="state">
+              <label class="text-xl font-[500] " for="">State</label>
+              <select id="states" name="states">
+                <option value="States">States</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+
+              </select>
                 <label class="text-xl font-[500] " for="">Area</label>
                 <input class="border-1 rounded-2xl py-2 w-full" type="text" name="Area" id="area">
                 <label class="text-xl font-[500] " for="">Production</label>
